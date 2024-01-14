@@ -34,14 +34,14 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2 md:w-1/2 space-x-8">
-            <div className="mockup-phone mt-5">
+          <div className="lg:w-1/2 md:w-1/2 flex lg:flex-row sm:flex-col items-center justify-center mt-5">
+            <div className="mockup-phone">
               <div className="camera"></div>
               <div className="display">
                 <Image src={navixplore} alt="NaviXplore-Screen" height={550} />
               </div>
             </div>
-            <div className="mockup-phone mt-5">
+            <div className="mockup-phone">
               <div className="camera"></div>
               <div className="display">
                 <Image

@@ -1,0 +1,35 @@
+.link {
+  width: 19rem;
+  text-decoration: none;
+}
+
+.link .card {
+  width: 18rem;
+  border: solid 3px rgb(255, 128, 0);
+}
+
+.link .card .card-img-top {
+  height: 14rem;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.link .card .card-title {
+  text-decoration: underline;
+  text-decoration-color: rgb(255, 128, 0);
+}
+
+@media (max-width: 768px) {
+  .link {
+    width: 90vw;
+  }
+
+  .link .card {
+    margin: 20px;
+    width: 80vw;
+  }
+
+  .link .card .card-img-top {
+    height: 70vw;
+  }
+}

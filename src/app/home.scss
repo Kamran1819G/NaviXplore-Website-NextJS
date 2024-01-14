@@ -1,0 +1,23 @@
+.custom-hero {
+  background-image: url(../assets/images/Metro-Station.jpg);
+  background-size: cover;
+  .content {
+    font-family: "Fredoka";
+    .text {
+      color: var(--text-secondary-color);
+    }
+  }
+  .download-options {
+    img {
+      border-radius: 12px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    .hero-content {
+      margin-top: 3vh;
+    }
+  }
+}

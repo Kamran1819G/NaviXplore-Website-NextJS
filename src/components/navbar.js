@@ -31,10 +31,14 @@ const navbar = () => {
                 <summary>About NaviXplore</summary>
                 <ul className="p-2">
                   <li>
-                    <a>What&apos;s New</a>
+                    <Link href={{ pathname: "/changelog" }}>
+                      What&apos;s New
+                    </Link>
                   </li>
                   <li>
-                    <a>App Features</a>
+                    <Link href={{ pathname: "/navixplore-app-features" }}>
+                      App Features
+                    </Link>
                   </li>
                   <li>
                     <a>Feedback</a>
@@ -47,23 +51,32 @@ const navbar = () => {
                 <summary>NaviXplore Guide</summary>
                 <ul className="p-2">
                   <li>
-                    <a>Explore Navi Mumbai</a>
+                    <Link
+                      href={{
+                        pathname: "/explore-navi-mumbai",
+                      }}
+                    >
+                      Explore Navi Mumbai
+                    </Link>
                   </li>
                   <li>
-                    <Link href="/navi-mumbai-metro-map">Navi Mumbai Metro Map</Link>
+                    <Link href={{ pathname: "/navi-mumbai-metro-map" }}>
+                      Navi Mumbai Metro Map
+                    </Link>
                   </li>
                 </ul>
               </details>
             </li>
             <li>
-              <Link href="/media-coverage">Media Coverage</Link>
+              <Link href={{ pathname: "/media-coverage" }}>Media Coverage</Link>
             </li>
             <li>
               <a>Advertise With Us</a>
             </li>
           </ul>
         </div>
-        <a
+        <Link
+          href={{ pathname: "/" }}
           className="btn btn-ghost text-2xl"
           style={{
             fontFamily: "Fredoka",
@@ -72,7 +85,7 @@ const navbar = () => {
           }}
         >
           Navi<span className="text-3xl">X</span>plore
-        </a>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -81,10 +94,22 @@ const navbar = () => {
               <summary>About NaviXplore</summary>
               <ul className="p-2">
                 <li>
-                  <a>What&apos;s New</a>
+                  <Link
+                    href={{
+                      pathname: "/changelogs",
+                    }}
+                  >
+                    What&apos;s New
+                  </Link>
                 </li>
                 <li>
-                  <a>App Features</a>
+                  <Link
+                    href={{
+                      pathname: "/navixplore-app-features",
+                    }}
+                  >
+                    App Features
+                  </Link>
                 </li>
                 <li>
                   <a>Feedback</a>
@@ -97,16 +122,20 @@ const navbar = () => {
               <summary>NaviXplore Guide</summary>
               <ul className="p-2">
                 <li>
-                  <Link href="/explore-navi-mumbai">Explore Navi Mumbai</Link>
+                  <Link href={{ pathname: "/explore-navi-mumbai" }}>
+                    Explore Navi Mumbai
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/navi-mumbai-metro-map">Navi Mumbai Metro Map</Link>
+                  <Link href={{ pathname: "/navi-mumbai-metro-map" }}>
+                    Navi Mumbai Metro Map
+                  </Link>
                 </li>
               </ul>
             </details>
           </li>
           <li>
-            <Link href="/media-coverage">Media Coverage</Link>
+            <Link href={{ pathname: "/media-coverage" }}>Media Coverage</Link>
           </li>
           <li>
             <a>Advertise With Us</a>

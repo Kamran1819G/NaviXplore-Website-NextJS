@@ -1,13 +1,15 @@
+'use client'
 import { useState, useEffect } from 'react';
 import PlacesCard from './PlacesCard';
 
 function ExploreNaviMumbai() {
+
   const [famousPlaces, setFamousPlaces] = useState([]);
   const [touristDestinations, setTouristDestinations] = useState([]);
 
   useEffect(() => {
     // Fetch Famous Places from API
-    fetch('../../json/FamousPlaces.json')
+    fetch('https://raw.githubusercontent.com/Kamran1819G/NaviXplore-Website-NextJS/master/src/json/FamousPlaces.json')
       .then((response) => response.json())
       .then((data) => setFamousPlaces(data))
       .catch((error) => console.error('Error fetching Famous Places:', error));
@@ -15,7 +17,7 @@ function ExploreNaviMumbai() {
 
   useEffect(() => {
     // Fetch Tourist Destinations from API
-    fetch('../../json/TouristDestinations.json')
+    fetch('https://raw.githubusercontent.com/Kamran1819G/NaviXplore-Website-NextJS/master/src/json/TouristDestinations.json')
       .then((response) => response.json())
       .then((data) => setTouristDestinations(data))
       .catch((error) => console.error('Error fetching Tourist Destinations:', error));
@@ -26,8 +28,8 @@ function ExploreNaviMumbai() {
       <div className="page-heading-section">
         <span className="page-heading text-4xl">Explore Navi Mumbai</span>
       </div>
-      <div className="container mx-auto">
-        <div className="lg:col-span-12 mt-4 mb-4">
+      <div className="page-container">
+        <div className=" lg:col-span-12 mt-4 mb-4">
           <p className="text">
             Uncover the treasures of Navi Mumbai with the NaviXplore App. This
             burgeoning city is known for its modern infrastructure, scenic
@@ -42,7 +44,7 @@ function ExploreNaviMumbai() {
             guide covers everything from serene parks to bustling markets,
             ensuring you experience the essence of this vibrant city.
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
             {famousPlaces.map((item) => (
               <div key={item.id}>
                 <PlacesCard data={item} />
@@ -57,7 +59,7 @@ function ExploreNaviMumbai() {
             Need a break from the urban hustle? Explore these nearby
             destinations for a rejuvenating getaway.
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
             {touristDestinations.map((item) => (
               <div key={item.id}>
                 <PlacesCard data={item} />

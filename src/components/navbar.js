@@ -50,7 +50,7 @@ const navbar = () => {
                     <a>Explore Navi Mumbai</a>
                   </li>
                   <li>
-                    <a>Navi Mumbai Metro Map</a>
+                    <Link href="/navi-mumbai-metro-map">Navi Mumbai Metro Map</Link>
                   </li>
                 </ul>
               </details>
@@ -100,7 +100,7 @@ const navbar = () => {
                   <Link href="/explore-navi-mumbai">Explore Navi Mumbai</Link>
                 </li>
                 <li>
-                  <a>Navi Mumbai Metro Map</a>
+                  <Link href="/navi-mumbai-metro-map">Navi Mumbai Metro Map</Link>
                 </li>
               </ul>
             </details>

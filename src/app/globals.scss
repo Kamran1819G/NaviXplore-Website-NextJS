@@ -27,6 +27,9 @@
 .page-description {
   color: #808080;
 }
+.page-container {
+  padding-left: calc(4vw + 50px);
+}
 @media (max-width: 768px) {
   .page-heading-section {
     padding: 20px;

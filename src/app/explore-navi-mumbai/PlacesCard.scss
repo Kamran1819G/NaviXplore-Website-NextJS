@@ -1,35 +1,34 @@
-.link {
-  width: 19rem;
+.place-card {
   text-decoration: none;
 }
 
-.link .card {
+.place-card > div {
   width: 18rem;
   border: solid 3px rgb(255, 128, 0);
 }
 
-.link .card .card-img-top {
+.place-card div img {
   height: 14rem;
   border-radius: 12px;
   padding: 20px;
 }
 
-.link .card .card-title {
+.place-card div h2 {
   text-decoration: underline;
   text-decoration-color: rgb(255, 128, 0);
 }
 
 @media (max-width: 768px) {
-  .link {
+  .place-card {
     width: 90vw;
   }
 
-  .link .card {
+  .place-card div {
     margin: 20px;
     width: 80vw;
   }
 
-  .link .card .card-img-top {
+  .place-card div img {
     height: 70vw;
   }
 }

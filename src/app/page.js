@@ -11,7 +11,8 @@ export default function Home() {
           <div className="lg:w-1/2 md:w-1/2 text-center">
             <div className="content">
               <h1 className="my-3 text text-5xl font-semibold">
-                Navi<span className="text-6xl">X</span>plore
+                Navi<span className="text-6xl">X</span>plore{" "}
+                <span className="text-3xl">- Navi Mumbai Guide App</span>
               </h1>
               <h2 className="my-3 text-xl font-semibold">
                 Making commute easy for everyone...
@@ -35,10 +36,10 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:w-1/2 md:w-1/2 flex lg:flex-row sm:flex-col items-center justify-center mt-5">
-            <div className="mockup-phone">
+            <div className="mockup-phone ">
               <div className="camera"></div>
               <div className="display">
-                <Image src={navixplore} alt="NaviXplore-Screen" height={550} />
+                <Image src={navixplore} alt="NaviXplore-Screen" height={525} />
               </div>
             </div>
             <div className="mockup-phone">
@@ -47,7 +48,7 @@ export default function Home() {
                 <Image
                   src={BusLiveTracking}
                   alt="NaviXplore-Screen"
-                  height={550}
+                  height={525}
                 />
               </div>
             </div>

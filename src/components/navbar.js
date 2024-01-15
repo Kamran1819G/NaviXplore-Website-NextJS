@@ -31,7 +31,7 @@ const navbar = () => {
                 <summary>About NaviXplore</summary>
                 <ul className="p-2">
                   <li>
-                    <Link href={{ pathname: "/changelog" }}>
+                    <Link href={{ pathname: "/changelogs" }}>
                       What&apos;s New
                     </Link>
                   </li>

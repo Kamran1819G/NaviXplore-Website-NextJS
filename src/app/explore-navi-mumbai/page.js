@@ -44,7 +44,7 @@ function ExploreNaviMumbai() {
             guide covers everything from serene parks to bustling markets,
             ensuring you experience the essence of this vibrant city.
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 lg:grid-cols-4">
             {famousPlaces.map((item) => (
               <div key={item.id}>
                 <PlacesCard data={item} />

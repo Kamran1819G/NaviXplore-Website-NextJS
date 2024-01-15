@@ -10,10 +10,10 @@ export default function Home() {
         <div className="flex flex-wrap items-center justify-center">
           <div className="lg:w-1/2 md:w-1/2 text-center">
             <div className="content">
-              <h1 className="text text-5xl font-semibold">
+              <h1 className="my-3 text text-5xl font-semibold">
                 Navi<span className="text-6xl">X</span>plore
               </h1>
-              <h2 className="text-white text-xl font-semibold">
+              <h2 className="my-3 text-xl font-semibold">
                 Making commute easy for everyone...
               </h2>
             </div>

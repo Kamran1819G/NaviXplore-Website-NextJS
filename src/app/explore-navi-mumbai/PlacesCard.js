@@ -1,4 +1,3 @@
-'use client'
 import Link from "next/link";
 import "./PlacesCard.scss";
 
@@ -6,10 +5,10 @@ function PlacesCard({ data }) {
   return (
     <Link
       className="place-card"
-      href={{ pathname: `/places/${data.name}`}}
+      href={`/places/${encodeURIComponent(data.name)}`}
     >
-      <div className="mt-4 mb-4">
-        <img className="w-full" src={data.image_url} alt={data.name} />
+      <div className="mt-4 mb-4 rounded-2xl">
+        <img className="w-full rounded-3xl" src={data.image_url} alt={data.name} />
         <div className="p-4">
           <h2 className="text-xl font-bold mb-2">{data.name}</h2>
           <hr className="my-3" />

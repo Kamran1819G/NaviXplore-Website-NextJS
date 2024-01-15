@@ -77,14 +77,14 @@ const navbar = () => {
         </div>
         <Link
           href={{ pathname: "/" }}
-          className="btn btn-ghost text-2xl"
+          className="btn btn-ghost text-center text-2xl"
           style={{
             fontFamily: "Fredoka",
             color: "var(--text-secondary-color)",
             fontWeight: 800,
           }}
         >
-          Navi<span className="text-3xl">X</span>plore
+          <span>Navi<span className="text-3xl">X</span>plore</span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

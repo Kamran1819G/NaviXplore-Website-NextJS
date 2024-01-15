@@ -1,26 +1,31 @@
-'use client'
-import { useState, useEffect } from 'react';
-import PlacesCard from './PlacesCard';
+"use client";
+import { useState, useEffect } from "react";
+import PlacesCard from "./PlacesCard";
 
 function ExploreNaviMumbai() {
-
   const [famousPlaces, setFamousPlaces] = useState([]);
   const [touristDestinations, setTouristDestinations] = useState([]);
 
   useEffect(() => {
     // Fetch Famous Places from API
-    fetch('https://raw.githubusercontent.com/Kamran1819G/NaviXplore-Website-NextJS/master/src/json/FamousPlaces.json')
+    fetch(
+      "https://raw.githubusercontent.com/Kamran1819G/NaviXplore-Website-NextJS/master/src/json/FamousPlaces.json"
+    )
       .then((response) => response.json())
       .then((data) => setFamousPlaces(data))
-      .catch((error) => console.error('Error fetching Famous Places:', error));
+      .catch((error) => console.error("Error fetching Famous Places:", error));
   }, []);
 
   useEffect(() => {
     // Fetch Tourist Destinations from API
-    fetch('https://raw.githubusercontent.com/Kamran1819G/NaviXplore-Website-NextJS/master/src/json/TouristDestinations.json')
+    fetch(
+      "https://raw.githubusercontent.com/Kamran1819G/NaviXplore-Website-NextJS/master/src/json/TouristDestinations.json"
+    )
       .then((response) => response.json())
       .then((data) => setTouristDestinations(data))
-      .catch((error) => console.error('Error fetching Tourist Destinations:', error));
+      .catch((error) =>
+        console.error("Error fetching Tourist Destinations:", error)
+      );
   }, []);
 
   return (
@@ -54,7 +59,9 @@ function ExploreNaviMumbai() {
         </div>
         <hr className="my-8" />
         <div className="lg:col-span-12 mt-4 mb-4">
-          <h3 className="section-heading mt-5 mb-4 text-3xl">Tourist Destinations</h3>
+          <h3 className="section-heading mt-5 mb-4 text-3xl">
+            Tourist Destinations
+          </h3>
           <p>
             Need a break from the urban hustle? Explore these nearby
             destinations for a rejuvenating getaway.

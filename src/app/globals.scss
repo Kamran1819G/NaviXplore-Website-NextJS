@@ -29,7 +29,7 @@
   color: #808080;
 }
 .page-container {
-  padding-left: calc(4vw + 50px);
+  padding: 0vw calc(4vw + 50px);
 }
 @media (max-width: 768px) {
   .page-heading-section {
@@ -38,5 +38,8 @@
     .page-heading {
       font-size: 4vh;
     }
+  }
+  .page-container {
+    padding: 0vw calc(1vw + 50px);
   }
 }

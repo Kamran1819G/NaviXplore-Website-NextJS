@@ -40,9 +40,6 @@ const navbar = () => {
                       App Features
                     </Link>
                   </li>
-                  <li>
-                    <a>Feedback</a>
-                  </li>
                 </ul>
               </details>
             </li>
@@ -71,7 +68,7 @@ const navbar = () => {
               <Link href={{ pathname: "/media-coverage" }}>Media Coverage</Link>
             </li>
             <li>
-              <a>Advertise With Us</a>
+              <Link href={{pathname: "/advertise-with-us"}}>Advertise With Us</Link>
             </li>
           </ul>
         </div>
@@ -111,9 +108,6 @@ const navbar = () => {
                     App Features
                   </Link>
                 </li>
-                <li>
-                  <a>Feedback</a>
-                </li>
               </ul>
             </details>
           </li>
@@ -138,7 +132,7 @@ const navbar = () => {
             <Link href={{ pathname: "/media-coverage" }}>Media Coverage</Link>
           </li>
           <li>
-            <a>Advertise With Us</a>
+            <Link href={{pathname: "/advertise-with-us"}}>Advertise With Us</Link>
           </li>
         </ul>
       </div>

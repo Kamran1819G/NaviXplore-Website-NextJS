@@ -21,7 +21,6 @@ const footer = () => {
           <a className="link link-hover">Explore Navi Mumbai</a>
           <a className="link link-hover">Navi Mumbai Travel Hacks</a>
           <a className="link link-hover">Live Announcements</a>
-          <a className="link link-hover">Commuter News</a>
           <a className="link link-hover">Media Coverage</a>
         </nav>
         <nav>

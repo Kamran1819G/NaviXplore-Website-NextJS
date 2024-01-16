@@ -68,7 +68,9 @@ const navbar = () => {
               <Link href={{ pathname: "/media-coverage" }}>Media Coverage</Link>
             </li>
             <li>
-              <Link href={{pathname: "/advertise-with-us"}}>Advertise With Us</Link>
+              <Link href={{ pathname: "/advertise-with-us" }}>
+                Advertise With Us
+              </Link>
             </li>
           </ul>
         </div>
@@ -81,7 +83,9 @@ const navbar = () => {
             fontWeight: 800,
           }}
         >
-          <span>Navi<span className="text-3xl">X</span>plore</span>
+          <span>
+            Navi<span className="text-3xl">X</span>plore
+          </span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -132,7 +136,9 @@ const navbar = () => {
             <Link href={{ pathname: "/media-coverage" }}>Media Coverage</Link>
           </li>
           <li>
-            <Link href={{pathname: "/advertise-with-us"}}>Advertise With Us</Link>
+            <Link href={{ pathname: "/advertise-with-us" }}>
+              Advertise With Us
+            </Link>
           </li>
         </ul>
       </div>

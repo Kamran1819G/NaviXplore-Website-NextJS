@@ -57,7 +57,7 @@ function ExploreNaviMumbai() {
             ))}
           </div>
         </div>
-        <hr className="my-8" />
+        <hr className=" h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
         <div className="lg:col-span-12 mt-4 mb-4">
           <h3 className="section-heading mt-5 mb-4 text-3xl">
             Tourist Destinations

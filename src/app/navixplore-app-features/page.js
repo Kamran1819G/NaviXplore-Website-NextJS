@@ -3,7 +3,7 @@ function NaviXploreAppFeatures() {
       <>
         <div className="page-heading-section">
           <span className="page-heading text-4xl">
-            About NaviXplore - The Local Guide for Navi Mumbai
+            About NaviXplore - The Guide for Navi Mumbai
           </span>
         </div>
   

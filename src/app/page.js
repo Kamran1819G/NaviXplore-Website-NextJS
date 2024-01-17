@@ -6,7 +6,7 @@ import BusLiveTracking from "../assets/images/bus-live-tracking.jpg";
 export default function Home() {
   return (
     <main>
-      <div className="custom-hero container lg:h-screen">
+      <div className="custom-hero container-fluid">
         <div className="flex flex-wrap items-center justify-center">
           <div className="lg:w-1/2  text-center">
             <div className="content">

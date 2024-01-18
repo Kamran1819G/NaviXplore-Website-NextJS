@@ -1,5 +1,10 @@
+"use client";
 import Image from "next/image";
+import Link from "next/link";
 import "./home.scss";
+import "swiper/css/bundle";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectCoverflow } from "swiper/modules";
 import navixplore from "../assets/images/navixplore-screen.jpg";
 import BusLiveTracking from "../assets/images/bus-live-tracking.jpg";
 
@@ -65,6 +70,89 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <section className="container-fluid pt-5">
+        <div className="flex flex-col lg:flex-row items-center justify-center">
+            <Swiper
+              className="w-full"
+              spaceBetween={30}
+              slidesPerView="auto"
+              modules={[Autoplay, EffectCoverflow]}
+              effect="coverflow"
+              depth={100}
+              loop={true}
+              speed={3000}
+              autoplay={{ delay: 2500}}
+              breakpoints={
+                {
+                  // when window width is >= 640px
+                  640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  // when window width is >= 768px
+                  768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                  },
+                }
+              }
+            >
+              <SwiperSlide>
+                <div className="p-3">
+                  <img
+                    src="https://yatrirailways.com/bl-themes/atom-magazine/img/yatri-features-1.png"
+                    className="img-fluid rounded shadow"
+                    alt="Feature 1"
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="p-3">
+                  <img
+                    src="https://yatrirailways.com/bl-themes/atom-magazine/img/yatri-features-2.png"
+                    className="img-fluid rounded shadow"
+                    alt="Feature 2"
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="p-3">
+                  <img
+                    src="https://yatrirailways.com/bl-themes/atom-magazine/img/yatri-features-3.png"
+                    className="img-fluid rounded shadow"
+                    alt="Feature 2"
+                  />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="p-3">
+                  <img
+                    src="https://yatrirailways.com/bl-themes/atom-magazine/img/yatri-features-4.png"
+                    className="img-fluid rounded shadow"
+                    alt="Feature 2"
+                  />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          <div className="col-span-4 p-5 md:p-5">
+            <h2 className="text-2xl md:text-2xl lg:text-3xl font-bold">
+              Get information related to Navi Mumbai Metro, express &amp; NMMT
+              Buses on your smartphone
+            </h2>
+            <Link
+              href="/navixplore-app-features"
+              className="btn btn-cta mt-3 text-white"
+              style={{ backgroundColor: "var(--primary-color)" }}
+            >
+              View All Features
+            </Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

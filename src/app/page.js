@@ -70,15 +70,14 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <section className="container-fluid pt-5">
+      <section className="container-fluid p-5 m-5">
         <div className="flex flex-col lg:flex-row items-center justify-center">
             <Swiper
               className="w-full"
-              spaceBetween={30}
+              spaceBetween={50}
               slidesPerView="auto"
               modules={[Autoplay, EffectCoverflow]}
               effect="coverflow"
-              depth={100}
               loop={true}
               speed={3000}
               autoplay={{ delay: 2500}}
